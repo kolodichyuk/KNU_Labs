@@ -1,6 +1,6 @@
 namespace Serializer {
     class Song {
-        [ShOneXml("Attribute")]
+        [ShOneXml("Attribute")] 
         public string Id;          // id song
 
         [ShOneXml("Element")]
