@@ -89,7 +89,7 @@ class MenuAndGenerators {
 					MofUSecondSequence.push_back(initalNumber);
 				}
 				BuildChart();
-            },
+                        },
 
 			[&]() { // метод числел Фiбоначчi
 				cout << 
@@ -129,7 +129,7 @@ class MenuAndGenerators {
 					"                                 Вибiр параметрiв                                \n" <<
 					"Параметрами даного методу генерацiї псевдовипадкових висел є множник(a),         \n" <<
 					"прирiст(с), просте число p та початкове значення                                 \n" <<
-	                "|----------------------------|\n";
+	                                "|----------------------------|\n";
 				int a = 0, c = 0, p = 0, initalNumber = 0;
 				cout << "Введiть  значення множника(a): ";
 				cin >> a;
@@ -146,7 +146,7 @@ class MenuAndGenerators {
 					generatedNumbers.push_back(initalNumber);
 				}
 				BuildChart();
-            },
+                        },
 
 			[&]() { // метод об'єднань
 				cout <<
@@ -166,7 +166,7 @@ class MenuAndGenerators {
 					generatedNumbers.push_back(item);
 				}
 				BuildChart();
-            }, 
+                        }, 
 		};
 
 		#pragma region Методи відображення результатів
@@ -176,7 +176,7 @@ class MenuAndGenerators {
 				if (number > maxNumber)
 					maxNumber = number;
 			map<string, int> resultChart = {
-				{"[0 - 0.1]:  ",   0},
+				{"[0 - 0.1]:  ", 0},
 				{"[0.1 - 0.2]:", 0},
 				{"[0.2 - 0.3]:", 0},
 				{"[0.3 - 0.4]:", 0},
@@ -185,7 +185,7 @@ class MenuAndGenerators {
 				{"[0.6 - 0.7]:", 0},
 				{"[0.7 - 0.8]:", 0},
 				{"[0.8 - 0.9]:", 0},
-				{"[0.9 - 1]:  ",   0}
+				{"[0.9 - 1]:  ", 0}
 			};
 			for (int i = 0; i < 100; i++) {
 				double value = generatedNumbers[i] / maxNumber;
@@ -237,16 +237,16 @@ class MenuAndGenerators {
 		}
         #pragma endregion
 	public:
-		void MainLogic() {   // головна логіка програми
-			while (true) {
-				system("cls");
-				MainMenu();
-				int inputValue = 0;
-				cin >> inputValue;
-				if (inputValue == -1)
-					break;
-				system("cls");
-				generators[inputValue]();
-			}
+	     void MainLogic() {   // головна логіка програми
+		while (true) {
+			system("cls");
+			MainMenu();
+			int inputValue = 0;
+			cin >> inputValue;
+			if (inputValue == -1)
+			    break;
+			system("cls");
+			generators[inputValue]();
 		}
+	     }
 };
