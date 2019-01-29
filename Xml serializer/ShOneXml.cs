@@ -119,7 +119,7 @@ namespace Serializer {
                 symbol = (char)((int)symbol + key);
                 elementEncryptResult += symbol;
             }
-            return elementEncryptResult;
+            return elementEncryptResult; 
         }
         private void Decryption() {
             pathNew = path.Substring(0, path.Length - 5) + "temp.xml";
