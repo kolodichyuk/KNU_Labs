@@ -14,4 +14,4 @@ namespace Serializer {
             get { return Position; }
         }
     }
-}
+} 
