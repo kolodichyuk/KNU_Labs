@@ -219,7 +219,7 @@ class MenuAndGenerators {
 		}
 		#pragma endregion
 
-        #pragma region Методи показу елементів меню
+                #pragma region Методи показу елементів меню
 		void MainMenu() {   // показ головного меню
 			cout <<
 				"\t\t Програма  призначена  для  демонстрацiї  роботи  5-ти  алгоритмiв генерацiї\n"  <<
@@ -235,7 +235,7 @@ class MenuAndGenerators {
 				"|-----------------|\n"                                               <<
 				"Зробiть свiй вибiр: ";
 		}
-        #pragma endregion
+                #pragma endregion
 	public:
 	     void MainLogic() {   // головна логіка програми
 		while (true) {
