@@ -1,1 +1,1 @@
-the most interesting university laboratory work
+the most interesting own university laboratory work
